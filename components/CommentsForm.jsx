@@ -49,7 +49,7 @@ const CommentsForm = ({ slug }) => {
 
     return (
         <div className='bg-white shadow-lg rounded-lg p-8 pb-12 mb-8'>
-            <h3 className='text-lg mb-8 font-semibold border-b pb-4'>Dejar un Comentario</h3>
+            <h3 className='text-lg mb-8 font-semibold border-b pb-4'>Dejar un comentario</h3>
             <div className='grid grid-cols-1 gap-4 mb-4'>
                 <textarea
                     ref={commentEl}
@@ -83,7 +83,7 @@ const CommentsForm = ({ slug }) => {
                     onClick={handleCommentSubmission}
                     className='transition duration-500 ease hover:bg-indigo-600 inline-block bg-blue-400 text-lg rounded-full text-white px-8 py-3 cursos-pointer'
                 >
-                    Publicar Comentario
+                    Publicar comentario
                 </button>
                 {showSuccesMessage && <span className='text-xl float-right font-semibold mt-3 text-green-500'>Comentario enviado a revisión</span>}
             </div>
