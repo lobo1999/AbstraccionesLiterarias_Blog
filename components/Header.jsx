@@ -18,7 +18,7 @@ const Header = () => {
                 <div className='md:fliat-left block'>
                     <Link href="/">
                         <span className='cursor-pointer font-bold text-4xl text-white'>
-                            Abstracciones Literarias TCU-370
+                            Abstracciones literarias TCU-370
                         </span>
                     </Link>
                 </div>
