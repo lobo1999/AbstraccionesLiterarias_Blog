@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 import { getCategories } from '../services';
-
+import ucrlogo from '../public/ucrlogo.png';
+import clijlogo from '../public/CLIJlogo.png';
+import Image from 'next/image'
 
 const Header = () => {
 
@@ -15,12 +17,20 @@ const Header = () => {
     return (
         <div className='container mx-auto px-10 mb-8'>
             <div className='border-b w-full inline-block border-blue-400 py-8'>
-                <div className='md:fliat-left block'>
-                    <Link href="/">
-                        <span className='cursor-pointer font-bold text-4xl text-white'>
-                            Abstracciones literarias TCU-370
-                        </span>
-                    </Link>
+                <Link href="/">
+                    <span className='cursor-pointer font-semibold text-4xl right-12 text-white'>
+                        Abstracciones literarias TCU-370
+                    </span>
+                </Link>
+                <div className='md:fliat-left display: block'>
+                    <Image
+                        unoptimized
+                        height='200px'
+                        width='385px'
+                        layout='intrinsic'
+                        className='align-middle rounded-full mx-auto'
+                        src={ucrlogo}
+                    />
                 </div>
                 <div className='hidden md:float-left md:contents'>
                     {categories.map((category) => (
